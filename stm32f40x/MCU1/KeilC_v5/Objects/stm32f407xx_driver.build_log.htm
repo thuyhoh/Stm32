@@ -3,131 +3,106 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.39.0.0
-Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: nguyen trong_thuy, non, LIC=----
+IDE-Version: µVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Trong Thuy, none, LIC=----
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.39.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.21
-Assembler:       Armasm.exe V6.21
-Linker/Locator:  ArmLink.exe V6.21
-Library Manager: ArmAr.exe V6.21
-Hex Converter:   FromElf.exe V6.21
-CPU DLL:         SARMCM3.DLL V5.39.0.0
+Toolchain:       MDK-Lite  Version: 5.40.0.3
+Toolchain Path:  C:\Users\Asus\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
 Dialog DLL:      DCM.DLL V1.17.5.0
-Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-E:\2.Embedded\microtroller\STM32fx\stm32f40x\MCU1\KeilC_v5\stm32f407xx_driver.uvprojx
-Project File Date:  09/05/2024
+E:\Microcontroller\Stm32\stm32f40x\MCU1\KeilC_v5\stm32f407xx_driver.uvprojx
+Project File Date:  09/19/2024
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'Application'
-compiling stm32f407xx_rcc_driver.c...
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(66): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
-   66 |         uint32_t temp = 0;
-      |                  ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(7): warning: In file included from...
-../../Drivers/stm32f407vg_drivers/Inc\stm32f407xx_uart_driver.h(17): warning: padding struct 'USART_Config_t' with 3 bytes to align 'USART_Baud' [-Wpadded]
-   17 |         uint32_t USART_Baud;                            /*@UART_BAUD*/
-      |                  ^
-../../Drivers/stm32f407vg_drivers/Inc\stm32f407xx_uart_driver.h(31): warning: padding struct 'USART_Handle_t' with 3 bytes to align 'pRxBuffer' [-Wpadded]
-   31 |         uint8_t* pRxBuffer;
-      |                  ^
-../../Drivers/stm32f407vg_drivers/Inc\stm32f407xx_uart_driver.h(24): warning: padding size of 'USART_Handle_t' with 3 bytes to alignment boundary [-Wpadded]
-   24 | typedef struct
-      |         ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(140): warning: unused parameter 'pUSARTx' [-Wunused-parameter]
-  140 | void USART_DeInit(USART_RegDef_t *pUSARTx)
-      |                                   ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(163): warning: no previous prototype for function 'USART_Start' [-Wmissing-prototypes]
-  163 | void USART_Start(USART_RegDef_t *pUSARTx)
-      |      ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(163): note: declare 'static' if the function is not intended to be used outside of this translation unit
-  163 | void USART_Start(USART_RegDef_t *pUSARTx)
-      | ^
-      | static 
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(186): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
-  186 |                         pdata = (uint16_t*) pTxBuffer;
-      |                                 ^~~~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(238): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
-  238 |                                 *((uint16_t*) pRxBuffer) = (pUSARTHandle->pUSARTx->DR  & (uint16_t)0x1FF);
-      |                                   ^~~~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(241): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
-  241 |                                 (uint16_t*) pRxBuffer++;
-      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(242): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
-  242 |                                 (uint16_t*) pRxBuffer++;
-      |                                 ^~~~~~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(241): warning: expression result unused [-Wunused-value]
-  241 |                                 (uint16_t*) pRxBuffer++;
-      |                                 ^           ~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(242): warning: expression result unused [-Wunused-value]
-  242 |                                 (uint16_t*) pRxBuffer++;
-      |                                 ^           ~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(435): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
-  435 |                                         pdata = (uint16_t*) pUSARTHandle->pTxBuffer;
-      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(435): warning: incompatible pointer types assigning to 'uint8_t *' (aka 'unsigned char *') from 'uint16_t *' (aka 'unsigned short *') [-Wincompatible-pointer-types]
-  435 |                                         pdata = (uint16_t*) pUSARTHandle->pTxBuffer;
-      |                                               ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(509): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
-  509 |                                                 *((uint16_t*) pUSARTHandle->pRxBuffer) = (pUSARTHandle->pUSARTx->DR  & (uint16_t)0x01FF);
-      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(373): warning: variable 'temp3' set but not used [-Wunused-but-set-variable]
-  373 |         uint32_t temp1 , temp2, temp3;
+*** Using Compiler 'V6.22', folder: 'C:\Users\Asus\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Application'
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(619): warning: variable 'temp3' set but not used [-Wunused-but-set-variable]
+  619 |         uint32_t temp1 , temp2, temp3;
       |                                 ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(703): error: call to undeclared function 'RCC_GetPCLK2Value'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
-  703 |            PCLKx = RCC_GetPCLK2Value();
-      |                    ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(703): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
-  703 |            PCLKx = RCC_GetPCLK2Value();
-      |                  ~ ^~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(706): error: call to undeclared function 'RCC_GetPCLK1Value'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
-  706 |            PCLKx = RCC_GetPCLK1Value();
-      |                    ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(706): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
-  706 |            PCLKx = RCC_GetPCLK1Value();
-      |                  ~ ^~~~~~~~~~~~~~~~~~~
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(717): error: use of undeclared identifier 'TODO'
-  717 |            TODO
-      |            ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(721): error: use of undeclared identifier 'TODO'
-  721 |   M_part = TODO/100;
-      |            ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(727): error: use of undeclared identifier 'TODO'
-  727 |   F_part = (usartdiv - (TODO * 100));
-      |                         ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(733): error: use of undeclared identifier 'TODO'
-  733 |           F_part = ((( F_part * TODO)+ 50) / 100)& ((uint8_t)0x07);
-      |                                 ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(738): error: use of undeclared identifier 'TODO'
-  738 |            F_part = ((( F_part * TODO)+ 50) / 100) & ((uint8_t)0x0F);
-      |                                  ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(746): error: no member named 'TODO' in 'USART_RegDef_t'
-  746 |   pUSARTx->TODO = tempreg;
-      |   ~~~~~~~  ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(749): warning: unused parameter 'pUSARTHandle' [-Wunused-parameter]
-  749 | _weak void USART_ApplicationEventCallback(USART_Handle_t *pUSARTHandle,uint8_t AppEv)
-      |                                                           ^
-../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(749): warning: unused parameter 'AppEv' [-Wunused-parameter]
-  749 | _weak void USART_ApplicationEventCallback(USART_Handle_t *pUSARTHandle,uint8_t AppEv)
-      |                                                                                ^
-20 warnings and 8 errors generated.
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(919): warning: unused parameter 'pUSARTHandle' [-Wunused-parameter]
+  919 | __weak void USART_ApplicationEventCallback(USART_Handle_t *pUSARTHandle,uint8_t event)
+      |                                                            ^
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_uart_driver.c(919): warning: unused parameter 'event' [-Wunused-parameter]
+  919 | __weak void USART_ApplicationEventCallback(USART_Handle_t *pUSARTHandle,uint8_t event)
+      |                                                                                 ^
+3 warnings generated.
 compiling stm32f407xx_uart_driver.c...
-".\Objects\stm32f407xx_driver.axf" - 8 Error(s), 20 Warning(s).
+compiling CortexMx_NVIC.c...
+compiling 002spi_tx_Testing.c...
+compiling main.c...
+compiling 001_HSE_HSI_Configure.c...
+../../../CortexMx/Drivers/Src/CortexMx.c(6): warning: function declared 'noreturn' should not return [-Winvalid-noreturn]
+    6 | }
+      | ^
+1 warning generated.
+compiling CortexMx.c...
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_spi_driver.c(129): warning: unused parameter 'pSPIx' [-Wunused-parameter]
+  129 | void SPI_DeInit(SPI_RegDef_t *pSPIx)
+      |                               ^
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_spi_driver.c(172): warning: expression result unused [-Wunused-value]
+  172 |                         (uint16_t*)pTxBuffer++;
+      |                         ^          ~~~~~~~~~~~
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_spi_driver.c(213): warning: expression result unused [-Wunused-value]
+  213 |                                 (uint16_t*)pRxBuffer++;
+      |                                 ^          ~~~~~~~~~~~
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_spi_driver.c(493): warning: expression result unused [-Wunused-value]
+  493 |                 (uint16_t*)pSPIHandle->pTxBuffer++;
+      |                 ^          ~~~~~~~~~~~~~~~~~~~~~~~
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_spi_driver.c(592): warning: unused parameter 'pSPIHandle' [-Wunused-parameter]
+  592 | __weak void SPI_ApplicationEventCallback(SPI_Handle_t *pSPIHandle,uint8_t AppEv)
+      |                                                        ^
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_spi_driver.c(592): warning: unused parameter 'AppEv' [-Wunused-parameter]
+  592 | __weak void SPI_ApplicationEventCallback(SPI_Handle_t *pSPIHandle,uint8_t AppEv)
+      |                                                                           ^
+6 warnings generated.
+compiling stm32f407xx_spi_driver.c...
+compiling CortexMx_SysTick_Timer.c...
+stm32f407xx_rcc_driver.c(31): warning: variable 'SystemClk' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+   31 |         }else if (clksrc == 2)
+      |                   ^~~~~~~~~~~
+stm32f407xx_rcc_driver.c(60): note: uninitialized use occurs here
+   60 |         pclk1 =  (SystemClk / ahbp) /apb1p;
+      |                   ^~~~~~~~~
+stm32f407xx_rcc_driver.c(31): note: remove the 'if' if its condition is always true
+   31 |         }else if (clksrc == 2)
+      |               ^~~~~~~~~~~~~~~~
+   32 |         {
+stm32f407xx_rcc_driver.c(19): note: initialize the variable 'SystemClk' to silence this warning
+   19 |         uint32_t pclk1,SystemClk;
+      |                                 ^
+      |                                  = 0
+1 warning generated.
+compiling stm32f407xx_rcc_driver.c...
+../../Drivers/stm32f407vg_drivers/Src/stm32f407xx_i2c_driver.c(159): warning: unused parameter 'pI2Cx' [-Wunused-parameter]
+  159 | void I2C_DeInit(I2C_RegDef_t *pI2Cx)
+      |                               ^
+1 warning generated.
+compiling stm32f407xx_i2c_driver.c...
+compiling stm32f407xx_gpio_driver.c...
+assembling startup_stm32f407xx.s...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=3352 RO-data=424 RW-data=1044 ZI-data=1672  
+".\Objects\stm32f407xx_driver.axf" - 0 Error(s), 12 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
-                ARM::CMSIS@5.9.0
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
                 CMSIS (Common Microcontroller Software Interface Standard)
-   * Component: CORE Version: 5.6.0
+   * Component: CORE Version: 6.1.0
 
 Package Vendor: Keil
                 https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
@@ -137,21 +112,20 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   ./RTE/_Application
-  C:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
-  C:/Users/ASUS/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+  C:/Users/Asus/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Asus/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE@5.6.0
+   * Component: ARM::CMSIS:CORE@6.1.0
 
    * Component: Keil::Device:Startup@2.6.3
-      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f407xx.s
-      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
       Source file:   MDK/Device/Source/ARM/STM32F40xxx_41xxx_OPT.s
       Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f407xx.s
       Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
-Target not created.
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>

@@ -7,6 +7,7 @@
 ".\objects\stm32f407xx_i2c_driver.o"
 ".\objects\stm32f407xx_spi_driver.o"
 ".\objects\stm32f407xx_uart_driver.o"
+".\objects\stm32f407xx_rcc_driver.o"
 ".\objects\002spi_tx_testing.o"
 ".\objects\001_hse_hsi_configure.o"
 ".\objects\startup_stm32f407xx.o"
